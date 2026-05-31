@@ -3,7 +3,6 @@
     
     <div>
       <h3 class="font-semibold mb-4">Filters</h3>
-
       <!-- Category -->
       <div class="mb-5">
         <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">

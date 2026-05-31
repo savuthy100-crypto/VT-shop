@@ -117,7 +117,7 @@
             ✕
           </button>
         </div>
-        <RouterLink to="/shop" class="absolute top-4 right-4 text-sm font-bold bg-black px-5 py-2 rounded-xl text-white hover:bg-amber-700">To Shop</RouterLink>
+        <RouterLink to="/shop" @click="menuOpen = false" class="absolute top-4 right-4 text-sm font-bold bg-black px-5 py-2 rounded-xl text-white hover:bg-amber-700">To Shop</RouterLink>
         <!-- SIDEBAR -->
         <Sidebar></Sidebar>
       </aside>
@@ -265,6 +265,11 @@ const DarkMode = useDarkMode();
 const cart = useCart();
 const router = useRouter();
 const searchOpen = ref(false);
+const sideOpen = ref(false);
+
+const toggleOpen = ()=>{
+  sideOpen.value = !sideOpen.value;
+}
 const toggleSearch = () => {
   searchOpen.value = !searchOpen.value;
 };
